@@ -4,44 +4,44 @@ import 'package:mervoweb/pages/widgets/lists/items.dart';
 final projectData = [
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
     image: mervo,
+    imageChild: "",
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
+    imageChild: "",
     image: mervo,
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
+    imageChild: "",
     image: mervo,
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
+    imageChild: "",
     image: mervo,
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
+    imageChild: "",
     image: mervo,
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
   ProjectItem(
     description: "Built a fully functional mobile app for the exchange of foreign currencies.",
-    imageChildren: [],
+    imageChild: "",
     image: mervo,
     name: "Foreign Currency Exchange",
-    taglineOne: "Exchange"
+    tagLines: "Exchange"
   ),
 ];

@@ -1,3 +1,10 @@
+import 'package:flutter/material.dart';
+import 'package:mervoweb/config/navigate.dart';
+import 'package:mervoweb/pages/screens/contact.dart';
+import 'package:mervoweb/pages/screens/gallery.dart';
+import 'package:mervoweb/pages/screens/home.dart';
+import 'package:mervoweb/pages/screens/portfolio.dart';
+
 String startStatement() {
   var hour = DateTime.now().hour;
   if(hour == 12 && hour < 5){
@@ -14,3 +21,11 @@ String startStatement() {
   }
   return '"Rest, have fun and make sure to have a good night sleep. It never stops,"';
 }
+
+toHome(BuildContext context){toNamed(context, const HomeSection().id);}
+
+toGallery(BuildContext context){toNamed(context, const GallerySection().id);}
+
+toPortfolio(BuildContext context){toNamed(context, const PortfolioSection().id);}
+
+toContact(BuildContext context){toNamed(context, const ContactSection().id);}

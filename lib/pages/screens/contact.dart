@@ -8,6 +8,7 @@ import 'package:mervoweb/widgets/button.dart';
 import 'package:mervoweb/widgets/text.dart';
 
 class ContactSection extends StatefulWidget {
+  final String id = "/:contact";
   const ContactSection({Key? key}) : super(key: key);
 
   @override

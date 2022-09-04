@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:mervoweb/pages/widgets/lists/project/projects.dart';
-import 'package:mervoweb/pages/widgets/projects/projects.dart';
+import 'package:lottie/lottie.dart';
+import 'package:mervoweb/config/colors.dart';
 import 'package:mervoweb/res/dimension.dart';
 import 'package:mervoweb/widgets/text.dart';
 
 class GallerySection extends StatelessWidget {
+  final String id = "/:gallery";
   const GallerySection({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    String url = "https://assets4.lottiefiles.com/packages/lf20_fgbjdipq.json";
     return Padding(
       padding: ResponsiveWidget.isDesktop(context)
       ? const EdgeInsets.only(right: 20, top: 100, bottom: 100)
@@ -22,7 +24,9 @@ class GallerySection extends StatelessWidget {
             size: ResponsiveWidget.isDesktop(context) ? 36 : ResponsiveWidget.isTablet(context) ? 30 : 24,
           ),
           const SizedBox(height: 50),
-          projectList(context, projectData)
+          TextWidget(text: "Will be updating this section soon. Don't go anywhere.", size: 16, color: tabBlueTwo,),
+          Lottie.network(url,)
+          // ResponsiveWidget.isPhone(context) ? const PhoneProjects() : const BigProjects()
         ],
       ),
     );

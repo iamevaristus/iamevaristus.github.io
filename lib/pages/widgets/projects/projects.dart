@@ -19,7 +19,7 @@ Widget projectList(BuildContext context, List<ProjectItem> data){
       )
       : ResponsiveWidget.isTablet(context)
       ? const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
+        crossAxisCount: 3,
         mainAxisSpacing: 10.0,
         crossAxisSpacing: 10.0
       )
@@ -35,7 +35,7 @@ Widget projectList(BuildContext context, List<ProjectItem> data){
         return Container(
           width: 100,
           height: 100,
-          decoration: BoxDecoration(color: whiteColor, borderRadius: BorderRadius.circular(15)),
+          decoration: BoxDecoration(color: tabBlueOne, borderRadius: BorderRadius.circular(15)),
           child: Column(
             children: [
               Container(
@@ -55,19 +55,10 @@ Widget projectList(BuildContext context, List<ProjectItem> data){
                     TextWidget(text: text.description, size: 12,),
                     const SizedBox(height: 10),
                     Row(
-                      children: [
-                        TextWidget(text: text.taglineOne, size: 12,),
-                        const SizedBox(width: 10),
-                        TextWidget(text: text.taglineTwo, size: 12,),
-                        const SizedBox(width: 10),
-                        TextWidget(text: text.tagLineThree, size: 12,),
-                        const SizedBox(width: 10),
-                        TextWidget(text: text.tagLineFour, size: 12,),
-                        const SizedBox(width: 10),
-                      ],
+                      children: [TextWidget(text: text.tagLines, size: 12,)],
                     ),
                     const SizedBox(height: 10),
-                    Row(children: text.imageChildren)
+                    Row(children: [Image.asset(text.imageChild)])
                   ],
                 ),
               )

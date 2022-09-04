@@ -9,6 +9,7 @@ import 'package:mervoweb/widgets/text.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class HomeSection extends StatelessWidget {
+  final String id = "/:home";
   const HomeSection({Key? key}) : super(key: key);
 
   @override

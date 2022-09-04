@@ -2,8 +2,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:mervoweb/config/colors.dart';
-import 'package:mervoweb/res/dimension.dart';
-import 'package:mervoweb/widgets/text.dart';
 
 class DevTab {
   Text section;

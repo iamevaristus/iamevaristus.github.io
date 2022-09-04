@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 const int desktopDevice = 1200;
 const int tabletDevice = 768;
-const int phoneDevice = 360;
+const int phoneDevice = 480;
 
 // class Responsive {
 //   static bool isPhone(BuildContext context) =>

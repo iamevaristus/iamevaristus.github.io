@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class PortFolioItem{
   String title;
 
@@ -11,21 +9,15 @@ class PortFolioItem{
 class ProjectItem{
   String name;
   String description;
-  String taglineOne;
-  String taglineTwo;
-  String tagLineThree;
-  String tagLineFour;
+  String tagLines;
   String image;
-  List<Widget> imageChildren;
+  String imageChild;
 
   ProjectItem({
     required this.description,
     required this.image,
-    required this.imageChildren,
+    required this.imageChild,
     required this.name,
-    this.taglineOne = "",
-    this.tagLineFour = "",
-    this.tagLineThree = "",
-    this.taglineTwo = ""
+    required this.tagLines
   });
 }

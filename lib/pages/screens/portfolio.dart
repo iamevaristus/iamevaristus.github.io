@@ -8,6 +8,7 @@ import 'package:mervoweb/widgets/tabs.dart';
 import 'package:mervoweb/widgets/text.dart';
 
 class PortfolioSection extends StatelessWidget {
+  final String id = "/:portfolio";
   const PortfolioSection({Key? key}) : super(key: key);
 
   @override
@@ -39,7 +40,7 @@ class PortfolioSection extends StatelessWidget {
                 ),
                 SizedBox(height: 15),
                 TextWidget(
-                  text: " But with the advent of technology, life was just...wow. I believe there is much technology has to offer and it is really limitless."
+                  text: "But with the advent of technology, life was just...wow. I believe there is much technology has to offer and it is really limitless."
                   " So, my journey into this wonderful world started from 2009. Still a kid though, but I had my eyes on that world."
                   " Navigating the world of technology has been a journey for me since early 2017. Many ups and downs but being focus paid. "
                   " Can't wait to work on your project for you. Let's bring those ideas of yours alive, booming and changing the world.",
@@ -94,8 +95,8 @@ class PortfolioSection extends StatelessWidget {
             stringtabs: false, tabs: devtab(context),
             children: const[DevLanguages(), DevFrameWorks(), DevAreas()]
           ),
-          const SizedBox(height: 120),
-          const TextWidget(text: "Life Background", size: 18),
+          // const SizedBox(height: 120),
+          // const TextWidget(text: "Life Background", size: 18),
           const SizedBox(height: 50),
         ],
       ),

@@ -10,33 +10,38 @@ class BlueButtonWidget extends StatelessWidget {
   final bool isLoading;
   final bool isEnabled;
   final Color color;
+  final Function(bool)? onHover;
   final String? family;
   final double size;
   const BlueButtonWidget({
     Key? key, required this.onPressed, this.height = 40,
     required this.text, this.width = 180, this.family,
-    this.isLoading = false, this.isEnabled = false, this.color = Colors.white, this.size = 14,
+    this.isLoading = false, this.isEnabled = false, this.color = Colors.white, this.size = 14, this.onHover,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: isLoading ? () {} : onPressed,
-      child: Container(
-        width: width,
-        height: height,
-        padding: const EdgeInsets.all(10),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: whiteColor)
-        ),
-        alignment: Alignment.center,
-        child: isLoading ? const WhiteLoader() : Text(
-          text,
-          style: TextStyle(color: color, fontSize: size, fontFamily: family),
-          textAlign: TextAlign.center,
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: isLoading ? () {} : onPressed,
+        onHover: onHover,
+        child: Container(
+          width: width,
+          height: height,
+          padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8),
+            border: Border.all(color: whiteColor)
+          ),
+          alignment: Alignment.center,
+          child: isLoading ? const WhiteLoader() : Text(
+            text,
+            style: TextStyle(color: color, fontSize: size, fontFamily: family),
+            textAlign: TextAlign.center,
+          )
         )
-      )
+      ),
     );
   }
 }

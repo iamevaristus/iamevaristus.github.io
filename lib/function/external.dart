@@ -1,4 +1,6 @@
 import 'dart:convert';
+// ignore: avoid_web_libraries_in_flutter
+import 'dart:html';
 
 import 'package:mervoweb/config/debug.dart';
 import 'package:mervoweb/config/exception.dart';
@@ -74,4 +76,15 @@ Future sendEmail(String name, String email, String message, String toEmail) asyn
     showGetSnackbar(title: "From TMG", message: "Sorry, couldn't reach out to Mervo.", type: Popup.error);
     debug(e.code);
   }
+}
+
+Future downloadResume({required String? fileName,required String url, bool? enabled}) async {
+  try {
+    AnchorElement anchor = AnchorElement(href: url);
+    anchor.download = fileName;
+    anchor.click();
+  } on Except catch (e) {
+    debug(e.code);
+  }
+  return null;
 }

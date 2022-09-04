@@ -76,10 +76,22 @@ Widget devList(BuildContext context, List<PortFolioItem> data){
     child: GridView.builder(
       shrinkWrap: true,
       gridDelegate: ResponsiveWidget.isDesktop(context)
-      ? const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 5)
+      ? const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 5,
+        crossAxisSpacing: 3,
+        childAspectRatio: 3,
+      )
       : ResponsiveWidget.isTablet(context)
-      ? const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 3)
-      : const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+      ? const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 3,
+        crossAxisSpacing: 2,
+        childAspectRatio: 3,
+      )
+      : const SliverGridDelegateWithFixedCrossAxisCount(
+        crossAxisCount: 2,
+        crossAxisSpacing: 2,
+        childAspectRatio: 3,
+      ),
       physics: const NeverScrollableScrollPhysics(),
       itemCount: data.length,
       itemBuilder: (context, index) {

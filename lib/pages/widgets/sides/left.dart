@@ -29,7 +29,17 @@ class LeftContent extends StatelessWidget {
               final social = media[index];
               return InkWell(
                 onTap: () => launchInBrowser(social.link),
-                child: Image.asset(social.image, width: 20, height: 20),
+                child: Container(
+                  width: 26,
+                  height: 26,
+                  padding: const EdgeInsets.all(3),
+                  decoration: BoxDecoration(
+                    // borderRadius: const BorderRadius.all(Radius.circular(10)),
+                    color: whiteColor,
+                    shape: BoxShape.circle
+                  ),
+                  child: Image.asset(social.image, width: 20, height: 20)
+                ),
               );
             }
           ),
@@ -56,7 +66,17 @@ class SocialMedia extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: pressed,
-      child: Image.asset(asset, width: width,),
+      child: Container(
+        width: 26,
+        height: 26,
+        padding: const EdgeInsets.all(3),
+        decoration: BoxDecoration(
+          // borderRadius: const BorderRadius.all(Radius.circular(10)),
+          color: whiteColor,
+          shape: BoxShape.circle
+        ),
+        child: Image.asset(asset, width: width,)
+      ),
     );
   }
 }
