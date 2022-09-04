@@ -1,0 +1,35 @@
+{
+    "name": "Mervo Website",
+    "short_name": "Mervo",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#07034D",
+    "theme_color": "#07034D",
+    "description": "Mervo Website",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "mervo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "mervo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "mervo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "mervo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
