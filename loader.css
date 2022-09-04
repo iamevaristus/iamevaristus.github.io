@@ -1,0 +1,93 @@
+:root{
+    --leftM: #3D5D3E;
+    --rightM: #4B002B;
+    --rightC: #B10606;
+    --leftC: #08A200;
+    --centre: #817400;
+}
+
+#intro{
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+
+.spacer {
+    height: 20px;
+}
+
+.mervo{
+    display: flex;
+    flex-direction: row;
+}
+
+.leftM{
+    color: var(--leftM);
+    font-size: 24px;
+    animation: leftM .5s ease-in-out infinite alternate;
+}
+.rightM{
+    color: var(--rightM);
+    font-size: 24px;
+    animation: rightM .5s ease-in-out infinite alternate;
+}
+.leftC{
+    color: var(--leftC);
+    font-size: 24px;
+    animation: leftC .5s ease-in-out infinite alternate;
+}
+.rightM{
+    color: var(--rightM);
+    font-size: 24px;
+    animation: rightM .5s ease-in-out infinite alternate;
+}
+.centre{
+    color: var(--centre);
+    font-size: 24px;
+    animation: centre .5s ease-in-out infinite alternate;
+}
+
+@keyframes leftM {
+    0% {
+        text-shadow: 0 0 10px var(--leftM);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--leftM);
+    }
+}
+
+@keyframes rightM {
+    0% {
+        text-shadow: 0 0 10px var(--rightM);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--rightM);
+    }
+}
+
+@keyframes leftC {
+    0% {
+        text-shadow: 0 0 10px var(--leftC);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--leftC);
+    }
+}
+
+@keyframes rightC {
+    0% {
+        text-shadow: 0 0 10px var(--rightC);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--rightC);
+    }
+}
+
+@keyframes centre {
+    0% {
+        text-shadow: 0 0 10px var(--centre);
+    }
+    100% {
+        text-shadow: 0 0 5px var(--centre);
+    }
+}

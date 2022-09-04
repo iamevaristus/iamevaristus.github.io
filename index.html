@@ -34,12 +34,24 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '2709902419';
+    var serviceWorkerVersion = '1091802782';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
+  <link rel="stylesheet" href="loader.css">
 </head>
 <body>
+  <div id="intro">
+    <img src="mervo.png" alt="Mervo" height="64">
+    <div class="spacer"></div>
+    <div class="mervo">
+      <h2 class="leftM">M</h2>
+      <h2 class="rightM">E</h2>
+      <h2 class="leftC">R</h2>
+      <h2 class="rightC">V</h2>
+      <h2 class="centre">O</h2>
+    </div>
+  </div>
   <script>
     window.addEventListener('load', function(ev) {
       // Download main.dart.js
@@ -53,6 +65,16 @@
         return appRunner.runApp();
       });
     });
+  </script>
+  <script>
+    window.onload = function(){
+      setTimeout(function(){
+        var loading = document.getElementById("intro");
+        if(loading){
+          loading.remove();
+        }
+      }.10000)
+    }
   </script>
 </body>
 </html>
