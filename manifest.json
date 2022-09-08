@@ -1,0 +1,35 @@
+{
+    "name": "IamEvaristus",
+    "short_name": "Mervo",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#07034D",
+    "theme_color": "#07034D",
+    "description": "My Website built with Flutter.",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "Mervo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "Mervo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "Mervo.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "Mervo.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
