@@ -3,6 +3,7 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:iamevaristus_website/model/link_list.dart';
 import 'package:page_transition/page_transition.dart';
 
 import '../config/colors.dart';
@@ -35,7 +36,7 @@ class MervoLogo extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Expanded(flex: 6, child: Image.asset(merVo, height: 64)),
+          Expanded(flex: 6, child: Image.network(myLogo, height: 64)), //Image.asset(merVo, height: 64)),
           const SizedBox(height: 20),
           Expanded(
             flex: 5,

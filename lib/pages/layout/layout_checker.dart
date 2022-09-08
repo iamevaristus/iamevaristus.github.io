@@ -94,7 +94,7 @@ class Logo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
-      child: Image.asset(merVo),
+      child: Image.network(myLogo),//Image.asset(merVo),
     );
   }
 }
