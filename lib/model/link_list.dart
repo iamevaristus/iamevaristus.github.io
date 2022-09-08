@@ -7,7 +7,7 @@ Uri githubLink = Uri(scheme: "https", host: "www.github.com", path: "/MaestroMer
 String evaMailAddress = "evaristusadimonyemma@gmail.com";
 String mervoMailAddress = "officialmervo@gmail.com";
 
-String myFile = "Evaristus_Resume.docx";
+String myFile = "Evaristus_Resume";
 String downloadAddress = "/lib/assets/file/my_resume.pdf";
 
 String talkButton = "Talk to me";
