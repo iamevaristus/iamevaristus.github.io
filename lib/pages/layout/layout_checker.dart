@@ -34,7 +34,7 @@ class _LayoutCheckerState extends State<LayoutChecker> {
               onHover: (val){
                 if(val) return const ElasticInOutCurve();
               },
-              text: "Get My Resume", width: 120
+              text: "Resume", width: 120
             ),
           ),
           // const SizedBox(width: 10),
