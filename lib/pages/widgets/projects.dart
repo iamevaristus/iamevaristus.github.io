@@ -17,17 +17,20 @@ Widget projectListView(BuildContext context, List<ProjectModel> data){
       itemBuilder:(context, index) {
         final items = data[index];
         return Container(
+          padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10)
+            borderRadius: BorderRadius.circular(10),
+            color: green
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextWidget(text: items.title),
               const SizedBox(height: 20),
               TextWidget(text: items.description, size: 14),
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
               Row(children: items.taglines.map((e) => TextWidget(text: e.toString())).toList()),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Row(children: items.imageLink.map((e) => ImageLink(asset: e.image, url: e.link)).toList())
             ],
           ),
@@ -51,17 +54,20 @@ Widget projectGridView(BuildContext context, List<ProjectModel> data){
       itemBuilder:(context, index) {
         final items = data[index];
         return Container(
+          padding: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10)
+            borderRadius: BorderRadius.circular(10),
+            color: green
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               TextWidget(text: items.title),
               const SizedBox(height: 20),
               TextWidget(text: items.description, size: 14),
-              const SizedBox(height: 20),
+              const SizedBox(height: 30),
               Row(children: items.taglines.map((e) => TextWidget(text: e.toString())).toList()),
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
               Row(children: items.imageLink.map((e) => ImageLink(asset: e.image, url: e.link)).toList())
             ],
           ),

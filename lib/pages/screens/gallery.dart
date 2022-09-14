@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:iamevaristus_website/model/projects.dart';
+import 'package:iamevaristus_website/pages/widgets/projects.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../config/colors.dart';
@@ -24,8 +26,8 @@ class GallerySection extends StatelessWidget {
             size: ResponsiveWidget.isDesktop(context) ? 36 : ResponsiveWidget.isTablet(context) ? 30 : 24,
           ),
           const SizedBox(height: 50),
-          TextWidget(text: "Will be updating this section soon. Don't go anywhere.", size: 16, color: tabBlueTwo,),
-          Lottie.network(urlLottie)
+          TextWidget(text: "Still updating this section. Don't go anywhere.", size: 16, color: tabBlueTwo,),
+          projectListView(context, projectData)
           // ResponsiveWidget.isPhone(context) ? const PhoneProjects() : const BigProjects()
         ],
       ),
